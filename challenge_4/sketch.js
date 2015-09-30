@@ -1,18 +1,23 @@
+// draw an ellipse
+var xPositions = [];
+var yPositions = [];
+
 function setup() {
-	// create a place to draw
-	createCanvas(640, 360);
-	noStroke();
-	noLoop();
+	createCanvas(640, 480);
+	for (var i = 0; i < 10; i++){
+		xPositions[i] = random(0, 640);
+		yPositions[i] = random(0, 480);
+
+	}
 }
 
 function draw() {
-	// clear the background
-	background(150, 50, 50);
+	background(249, 0, 0);
 
-	// set a fill color
-	fill(255, 255, 255);
+	for (var i = 0; i < 10; i++){
+		xPositions[i] = xPositions[i] + random(-5, 5);
+		yPositions[i] = yPositions[i] + random(-5, 5);
 
-	// draw the ellipse
-	var diameter = random(100, 200);
-	ellipse(320, 180, diameter, diameter);
+		ellipse(xPositions[i], yPositions[i], random(20, 30), random(20, 30));
+	}
 }
