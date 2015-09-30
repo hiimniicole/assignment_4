@@ -15,6 +15,7 @@ function draw() {
 	background(249, 0, 0);
 
 	for (var i = 0; i < 10; i++){
+fill(0,249,255);
 		xPositions[i] = xPositions[i] + random(-5, 5);
 		yPositions[i] = yPositions[i] + random(-5, 5);
 
