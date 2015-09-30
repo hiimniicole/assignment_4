@@ -2,7 +2,6 @@ function setup() {
 	// create a place to draw
 	createCanvas(640, 360);
 	noStroke();
-	noLoop();
 }
 
 function draw() {
@@ -10,9 +9,12 @@ function draw() {
 	background(150, 50, 150);
 
 	// set a fill color
-	fill(255, 255, 255);
+	fill(286, 286, 286);
 
 	// draw the rect
-	fill (86,86,86);
-rect(30, 20, 55, 55);
+	fill (0);
+	rect(30, 20, 170, 355);
+
+	fill(255,255,0, 50);
+	ellipse(mouseX, mouseY, 50, 50);
 }
