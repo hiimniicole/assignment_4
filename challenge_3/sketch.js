@@ -12,7 +12,7 @@ function draw() {
 	// set a fill color
 	fill(255, 255, 255);
 
-	// draw the ellipse
-	var diameter = random(100, 200);
-	ellipse(320, 180, diameter, diameter);
+	// draw the rect
+	fill (86,86,86);
+rect(30, 20, 55, 55);
 }

@@ -4,7 +4,7 @@
 // The ball bounces when it hits the side of the canvas
 // and when it hits a mouse controlled paddle.
 
-// This challenge contains multiple syntax, runtime, and 
+// This challenge contains multiple syntax, runtime, and
 // logical errors. Find and fix the errors to make it work.
 
 
@@ -14,8 +14,8 @@ var ball = {
 	y: 100,
 	speedX: 5,
 	speedY: 5,
-	radius: 25
-};
+	radius: 25,
+}
 
 
 // paddle: a data object to hold info about the ball
@@ -24,7 +24,7 @@ var paddle = {
 	y: 350
 	width: 300,
 	height: 30,
-};
+}
 
 
 // setup: called by p5 once at startup
@@ -36,11 +36,11 @@ setup() {
 
 // draw: called by p5 repeatedly to draw the game
 function draw() {
-	
+
 	//////////////////////////////
 	// update
 
-	updateBall); 
+	updateBall);
 	paddle.x = mouseY;
 
 
@@ -55,12 +55,12 @@ function draw() {
 
 
 // updateBall: move the ball, then detect and respond to collisions
-function updateBall() 
+function updateBall()
 {
 	// change position
 	ball.x = ball.x + ball.speedX;
 	ball.y = ball.y + ball.speedY;
-	
+
 
 	// don't let the ball go through the walls
 
