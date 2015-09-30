@@ -6,7 +6,7 @@ function setup() {
 
 function draw() {
 	// clear the background
-	background(150, 50, 150);
+	background(150, 150, 150);
 
 	// set a fill color
 	fill(286, 286, 286);
@@ -15,6 +15,6 @@ function draw() {
 	fill (0);
 	rect(30, 20, 170, 355);
 
-	fill(255,255,0, 50);
+	fill(193,12,12);
 	ellipse(mouseX, mouseY, 50, 50);
 }
