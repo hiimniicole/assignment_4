@@ -7,11 +7,27 @@ function setup() {
 
 function draw() {
 	// clear the background
-	background(50, 50, 150);
+	background(53, 142, 239);
 
 	// set a fill color
-	fill(53, 142, 239);
+	fill(32, 119, 3);
+  //draw rect
+  rect(1, 300, 800, 100);
 
-//draw rect
-rect(30, 20, 500, 500);
+//set flower fill
+fill(225,225,225,90);
+	//draw ellipse for flower
+  ellipse(56, 46, 55, 55);
+	//set flower fill
+	fill(225,225,225,60);
+		//draw ellipse for flower
+	  ellipse(56, 46, 30, 30);
+		//set flower fill
+		fill(244,244,171,60);
+			//draw ellipse for flower
+		  ellipse(56, 46, 10, 10);
+
+
+
+
 }
