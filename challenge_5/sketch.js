@@ -2,7 +2,7 @@ function setup() {
 	// create a place to draw
 	createCanvas(640, 360);
 	noStroke();
-	noLoop();
+
 }
 
 function draw() {
@@ -12,13 +12,14 @@ function draw() {
 	// set a fill color
 	fill(255, 255, 255);
 
+
 	// draw the ellipse
-	ellipse(56, 46, 55, 55);
+	ellipse (mouseX, mouseY, 50, 50);
 
 	// set a fill color
 	fill(9, 49, 214);
 
 	// draw the blue ellipse
-	ellipse(56, 46, 30, 30);
+	ellipse(mouseX, mouseY, 30, 30);
 
 }

@@ -10,9 +10,8 @@ function draw() {
 	background(50, 50, 150);
 
 	// set a fill color
-	fill(255, 255, 255);
+	fill(53, 142, 239);
 
-	// draw the ellipse
-	var diameter = random(100, 200);
-	ellipse(320, 180, diameter, diameter);
+//draw rect
+rect(30, 20, 500, 500);
 }
