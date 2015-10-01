@@ -16,5 +16,8 @@ function draw() {
 	rect(30, 20, 170, 355);
 
 	fill(193,12,12);
-	ellipse(mouseX, mouseY, 50, 50);
+	stroke(193);
+	line(mouseX, mouseY, 100, 75);
+	line(mouseY, mouseX, 100, 75);
+
 }
