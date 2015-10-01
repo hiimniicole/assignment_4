@@ -27,6 +27,11 @@ fill(225,225,225,90);
 			//draw ellipse for flower
 		  ellipse(56, 46, 10, 10);
 
+//fill stem
+      fill(22,91,2);
+			//draw flower stem line
+			line(30, 100, 85, 75);
+
 
 
 
