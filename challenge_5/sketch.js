@@ -7,12 +7,18 @@ function setup() {
 
 function draw() {
 	// clear the background
-	background(150, 150, 50);
+	background(81, 11, 11);
 
 	// set a fill color
 	fill(255, 255, 255);
 
 	// draw the ellipse
-	var diameter = random(100, 200);
-	ellipse(320, 180, diameter, diameter);
+	ellipse(56, 46, 55, 55);
+
+	// set a fill color
+	fill(9, 49, 214);
+
+	// draw the blue ellipse
+	ellipse(56, 46, 30, 30);
+
 }
