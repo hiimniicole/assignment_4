@@ -1,37 +1,35 @@
 function setup() {
-	// create a place to draw
-	createCanvas(640, 360);
-noStroke();
-	noLoop();
+	createCanvas(640, 480);
+	noStroke();
 }
 
 function draw() {
-	// clear the background
-	background(53, 142, 239);
+	background(100, 190, 250);
+	noStroke();
+	fill(40, 180, 50);
+	rect(0, 280, 640, 200);
 
-	// set a fill color
-	fill(32, 119, 3);
-  //draw rect
+	for (i = 0; i < 100; i++) {
+		drawFlower(random(-100, 740), 300 + i * 4);
+	}
+}
 
-	rect(1, 300, 800, 100);
+
+function drawFlower(x, y){
+	stroke(0, 120, 10);
+	strokeWeight(5);
+	line(x, y, x, y - 100);
+
+	noStroke();
+	fill(0, 120, 10);
+	ellipse(x, y-100, 15, 15);
+
+	noStroke();
+	fill(255, 255, 255, 100);
 
 
-//set flower fill
-fill(225,225,225,90);
-	//draw ellipse for flower
-  ellipse(56, 46, 55, 55);
-	//set flower fill
-	fill(225,225,225,60);
-		//draw ellipse for flower
-	  ellipse(56, 46, 30, 30);
-		//set flower fill
-		fill(244,244,171,60);
-			//draw ellipse for flower
-		  ellipse(56, 46, 10, 10);
-
-//fill stem
-strokeWeight(8);
-stroke(0,150,0);
-line(100,100,100,200);
-
+	for(r = 0; r < 5; r++) {
+		ellipse(x, y-100, r*10, r*10);
+	}
+	noLoop();
 }
