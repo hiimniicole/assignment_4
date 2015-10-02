@@ -1,7 +1,8 @@
 // draw an ellipse
 var xPositions = [];
 var yPositions = [];
-
+var ballSizes = [];
+var colors = [];
 function setup() {
 	createCanvas(640, 480);
 	for (var i = 0; i < 10; i++){
@@ -16,6 +17,7 @@ function draw() {
 
 	for (var i = 0; i < 10; i++){
 fill(0,249,255);
+
 		xPositions[i] = xPositions[i] + random(-5, 5);
 		yPositions[i] = yPositions[i] + random(-5, 5);
 
