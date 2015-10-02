@@ -1,7 +1,7 @@
 function setup() {
 	// create a place to draw
 	createCanvas(640, 360);
-	noStroke();
+
 }
 
 function draw() {
@@ -15,9 +15,12 @@ function draw() {
 	fill (0);
 	rect(30, 20, 170, 355);
 
-	fill(193,12,12);
-	stroke(193);
-	line(mouseX, mouseY, 100, 75);
-	line(mouseY, mouseX, 100, 75);
 
+
+stroke(255,0,0);
+strokeWeight(30);
+if (mouseX > 50)
+    mouseY = 50;
+line(mouseX - 50, mouseY - 50, mouseX + 50, mouseY + 50);
+line(mouseX - 50, mouseY + 50, mouseX + 50, mouseY - 50);
 }
