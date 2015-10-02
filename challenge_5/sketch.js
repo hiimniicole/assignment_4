@@ -1,38 +1,31 @@
-var ballX = 0;
-var ballY = 0;
+var startX;
+var startY;
+
 
 function setup() {
-	// create a place to draw
-	createCanvas(640, 360);
-	noStroke();
-
+	createCanvas(640, 480);
+	background(255);
 }
 
 function draw() {
-	// clear the background
-	background(81, 11, 11);
 
-	// set a fill color
-	fill(255, 255, 255);
+	background(50, 10, 10);
+	strokeWeight(10);
+	ellipseMode(RADIUS);
+
+	fill(0, 100, 255);
+	stroke(255, 255, 255);
 
 
-	// draw the ellipse
-	ellipse (mouseX, mouseY, 50, 50);
-if (mouseIsPressed === false ){
-	ballX = mouseX;
-	ballY = mouseY;
-//down
-	// set a fill color
-	fill(9, 49, 214);
-} else {
-	//up
-	// draw the blue ellipse
-	ellipse(mouseX, mouseY, 30, 30);
-	ellipse(mouseX, mouseY, 50,50);
-ballX = mouseX;
-ballY = mouseY;
+	if (!isMousePressed) {
+		startX = mouseX;
+		startY = mouseY;
+	}
+	else {
+		line(startX, startY, mouseX, mouseY);
+		ellipse(startX, startY, 20, 20);
+	}
 
-}
-
+	ellipse(mouseX, mouseY, 20, 20);
 
 }
