@@ -1,3 +1,6 @@
+var ballX = 0;
+var ballY = 0;
+
 function setup() {
 	// create a place to draw
 	createCanvas(640, 360);
@@ -15,12 +18,21 @@ function draw() {
 
 	// draw the ellipse
 	ellipse (mouseX, mouseY, 50, 50);
-
+if (mouseIsPressed === false ){
+	ballX = mouseX;
+	ballY = mouseY;
+//down
 	// set a fill color
 	fill(9, 49, 214);
-
+} else {
+	//up
 	// draw the blue ellipse
 	ellipse(mouseX, mouseY, 30, 30);
-	
+	ellipse(mouseX, mouseY, 50,50);
+ballX = mouseX;
+ballY = mouseY;
+
+}
+
 
 }
