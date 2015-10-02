@@ -1,7 +1,7 @@
 function setup() {
 	// create a place to draw
 	createCanvas(640, 360);
-	noStroke();
+noStroke();
 	noLoop();
 }
 
@@ -12,7 +12,9 @@ function draw() {
 	// set a fill color
 	fill(32, 119, 3);
   //draw rect
-  rect(1, 300, 800, 100);
+
+	rect(1, 300, 800, 100);
+
 
 //set flower fill
 fill(225,225,225,90);
@@ -28,11 +30,8 @@ fill(225,225,225,90);
 		  ellipse(56, 46, 10, 10);
 
 //fill stem
-      fill(22,91,2);
-			//draw flower stem line
-			line(30, 100, 85, 75);
-
-
-
+strokeWeight(8);
+stroke(0,150,0);
+line(100,100,100,200);
 
 }
